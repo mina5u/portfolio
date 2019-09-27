@@ -1,0 +1,10 @@
+.p-logo{
+    position: absolute;
+    color: #fff;
+}
+
+@media screen and (max-width: 414px){
+    .p-logo{
+        font-size:var(--spacing-l);
+    }
+}

@@ -1,0 +1,13 @@
+.c-inner{
+    max-width: 1280px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: var(--spacing-l);
+}
+
+@media screen and (max-width: 768px){
+    .c-inner{
+        padding: var(--spacing-l) var(--spacing-m);
+    }
+}

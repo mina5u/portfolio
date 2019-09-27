@@ -1,0 +1,19 @@
+.p-nav{
+    max-width: 600px;
+}
+
+.p-nav__list{
+    display: flex;
+    width: 100%;
+}
+
+.p-nav__item{
+    flex: 0 1 calc(100% / 4);
+    text-align: center;
+}
+
+.p-nav__target{
+    padding: var(--spacing-s);
+    font-size: var(--font-size-x-lg);
+    color: #fff;
+}

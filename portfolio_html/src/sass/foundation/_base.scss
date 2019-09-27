@@ -1,0 +1,98 @@
+body{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 1.6;
+    font-family: "游明朝体", "Yu Mincho", YuMincho, 'Hiragino Mincho ProN', "HiraMinProN-W6", "ヒラギノ明朝 ProN W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+    font-feature-settings: "palt";
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    line-height: 0;
+}
+
+iframe{
+    max-width: 100%;
+    line-height: 0;
+}
+
+:root{
+    --font-size-sm: 14px;
+    --font-size-normal: 16px;
+    --font-size-lg: 24px;
+    --font-size-x-lg: 32px;
+    --font-size-xx-lg: 60px;
+
+    --spacing-xx-s: 4px;
+    --spacing-x-s: 8px;
+    --spacing-s: 16px;
+    --spacing-m: 32px;
+    --spacing-l: 64px;
+    --spacing-x-l: 128px;
+    --spacing-xx-l: 256px;
+}
+
+p{
+    font-size: var(--font-size-normal);
+}
+
+h3{
+    font-size: var(--font-size-lg);
+}
+
+h2{
+    font-size: var(--font-size-x-lg);
+}
+
+h1{
+    font-size: var(--font-size-xx-lg);
+}
+
+
+
+@media screen and (max-width: 768px){
+    :root{
+        --font-size-sm: 12px;
+        --font-size-normal: 14px;
+        --font-size-lg: 22px;
+        --font-size-x-lg: 30px;
+        --font-size-xx-lg: 55px;
+        
+        --spacing-xx-s: 3px;
+        --spacing-x-s: 6px;
+        --spacing-s: 12px;
+        --spacing-m: 24px;
+        --spacing-l: 48px;
+        --spacing-x-l: 96px;
+        --spacing-xx-l: 192px; 
+    }
+}
+
+
+
+@media screen and (max-width: 414px){
+    :root{
+        --font-size-sm: 10px;
+        --font-size-normal: 12px;
+        --font-size-lg: 18px;
+        --font-size-x-lg: 26px;
+        --font-size-xx-lg: 50px;
+        
+        --spacing-xx-s: 2px;
+        --spacing-x-s: 4px;
+        --spacing-s: 8px;
+        --spacing-m: 16px;
+        --spacing-l: 32px;
+        --spacing-x-l: 64px;
+        --spacing-xx-l: 128px;
+    }
+}

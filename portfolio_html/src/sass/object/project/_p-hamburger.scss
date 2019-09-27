@@ -1,0 +1,67 @@
+.p-hamburger{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #222;
+}
+
+.p-hamburger__item{
+    position: relative;
+    width: 24px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.p-hamburger__lines-top, 
+.p-hamburger__lines-middle, 
+.p-hamburger__lines-bottom{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    border-radius: 3px;
+    content: "";
+    cursor: pointer;
+    background-color: #fff;
+    transition: all 0.3s;
+}
+
+.p-hamburger__lines-top{
+    top: 0;
+}
+
+.p-hamburger__lines-middle{
+    top: 45%;
+}
+
+.p-hamburger__lines-bottom{
+    bottom: 0;
+}
+
+.p-hamburger__item.is-active .p-hamburger__lines-top{
+    transform: translateY(8px) rotate(45deg);
+}
+
+.p-hamburger__item.is-active .p-hamburger__lines-middle{
+    opacity: 0;
+}
+
+.p-hamburger__item.is-active .p-hamburger__lines-bottom{
+    transform: translateY(-8px) rotate(-45deg);
+}
+    
+
+@media screen and (max-width: 414px){
+    
+    .p-hamburger{
+        width: 50px;
+        height: 50px;
+    }
+}

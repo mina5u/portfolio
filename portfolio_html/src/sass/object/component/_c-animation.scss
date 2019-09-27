@@ -1,0 +1,48 @@
+@keyframes fade{
+    0% {
+        display: none;
+        opacity: 0;
+    }
+    
+    1% {
+        display: block;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slidein_100{
+    0% {
+        transform: translateX(100%);
+    }
+    
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slidein{
+    0% {
+        transform: translateX(-20%);
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slidein-up{
+    0% {
+        transform: translateY(20%);
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
