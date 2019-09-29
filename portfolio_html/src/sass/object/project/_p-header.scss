@@ -1,5 +1,12 @@
+.p-header__headerbar{
+    position: fixed;
+    z-index: 999;
+}
+
 .p-header__billboard{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 115px;
 }

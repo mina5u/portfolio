@@ -20,7 +20,7 @@
 .p-nav-ft__target{
     position: relative;
     display: inline-block;
-    padding: var(--spacing-s);
+    padding: var(--spacing-x-s);
     color: #fff;
 }
 
@@ -29,12 +29,12 @@
     display: block;
     width: 0;
     height: 1px;
-    left : 50%;
+    left : 0%;
     bottom: 0;
     content: "";
     background-color: #fff;
-    transition: 0.5s all;
-    transform: translateX(-50%);
+    transition: 0.4s all;
+    transform: translateX(-0%);
 }
 
 .p-nav-ft__target:hover::after{

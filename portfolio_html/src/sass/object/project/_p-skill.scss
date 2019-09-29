@@ -1,0 +1,43 @@
+.p-skill{
+    margin-bottom: var(--spacing-x-l);
+    background-color: #f0f0f0;
+}
+
+.p-skill__title{
+    margin-bottom: var(--spacing-l);
+    text-align: center;
+}
+
+.p-skill__cont{
+    grid-gap: var(--spacing-l) var(--spacing-s);
+    padding: var(--spacing-l);
+    background-color: #fff;
+}
+
+.p-skill__card{
+    text-align: center;
+}
+
+.p-skill__card__icon{
+    height: 100px;
+    margin-bottom: var(--spacing-s);
+}
+
+.p-skill__card__title{
+    margin-top: var(--spacing-x-s);
+}
+
+.p-skill__card__prod{
+    width: 100%;
+    background-color: #f0f0f0;
+}
+
+.p-skill__card__prod__name,
+.p-skill__card__prod__description{
+    padding: var(--spacing-x-s);
+}
+
+.p-skill__card__prod__name{
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+}

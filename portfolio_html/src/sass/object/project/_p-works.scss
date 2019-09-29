@@ -65,6 +65,15 @@
     margin-bottom: var(--spacing-s);
 }
 
+.p-works__description__source__target{
+    padding: var(--spacing-x-s);
+    color: #1a0dab;
+    transition: all 0.3s;
+}
+.p-works__description__source__target:hover{
+    opacity: 0.7;
+}
+
 @media screen and (max-width: 768px){
     .p-works__cont{
         flex-flow: column nowrap;

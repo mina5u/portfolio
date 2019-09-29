@@ -1,6 +1,8 @@
 .p-logo{
     position: absolute;
+    z-index: 1;
     color: #fff;
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.6));
 }
 
 @media screen and (max-width: 414px){
