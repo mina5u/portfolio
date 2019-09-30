@@ -3,7 +3,7 @@ body{
     margin-right: auto;
     margin-left: auto;
     line-height: 1.6;
-    font-family: "游明朝体", "Yu Mincho", YuMincho, 'Hiragino Mincho ProN', "HiraMinProN-W6", "ヒラギノ明朝 ProN W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+    font-family: 'arial',"Hiragino Kaku Gothic ProN","メイリオ",'sans-serif';
     font-feature-settings: "palt";
     font-size: 16px;
     font-weight: 400;
@@ -28,8 +28,8 @@ iframe{
 :root{
     --font-size-sm: 14px;
     --font-size-normal: 16px;
-    --font-size-lg: 24px;
-    --font-size-x-lg: 32px;
+    --font-size-lg: 26px;
+    --font-size-x-lg: 34px;
     --font-size-xx-lg: 60px;
 
     --spacing-xx-s: 4px;
@@ -61,10 +61,10 @@ h1{
 
 @media screen and (max-width: 768px){
     :root{
-        --font-size-sm: 12px;
-        --font-size-normal: 14px;
+        --font-size-sm: 13px;
+        --font-size-normal: 15px;
         --font-size-lg: 22px;
-        --font-size-x-lg: 28px;
+        --font-size-x-lg: 29px;
         --font-size-xx-lg: 55px;
         
         --spacing-xx-s: 3px;
@@ -81,9 +81,9 @@ h1{
 
 @media screen and (max-width: 414px){
     :root{
-        --font-size-sm: 10px;
-        --font-size-normal: 12px;
-        --font-size-lg: 18px;
+        --font-size-sm: 12px;
+        --font-size-normal: 14px;
+        --font-size-lg: 19px;
         --font-size-x-lg: 24px;
         --font-size-xx-lg: 50px;
         

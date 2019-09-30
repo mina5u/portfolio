@@ -5,6 +5,7 @@
 
 @media screen and (max-width: 768px){
     .p-name{
+        margin-bottom: var(--spacing-x-s);
         font-size: var(--font-size-lg);
     }
 }
