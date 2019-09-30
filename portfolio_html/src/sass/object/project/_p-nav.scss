@@ -1,12 +1,14 @@
 .p-nav__list{
     display: flex;
+    flex-flow: row nowrap;
+    
 }
 
 .p-nav__item{
-    display: inline;
     flex: 0 1 calc(100% / 4);
     text-align: center;
     margin-left: var(--spacing-s);
+    font-size: var(--font-size-normal);
 }
 
 .p-nav__item:nth-child(1){
@@ -17,7 +19,6 @@
     position: relative;
     display: inline-block;
     padding: var(--spacing-x-s);
-    font-size: var(--font-size-normal);
     color: #fff;
 }
 
