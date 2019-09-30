@@ -10,3 +10,15 @@
     align-items: center;
     padding-top: 115px;
 }
+
+@media screen and (max-width: 768px){
+    .p-header__billboard{
+        padding-top: 115px;
+    }
+}
+
+@media screen and (max-width: 414px){
+    .p-header__billboard{
+        padding-top: 85px;
+    }
+}

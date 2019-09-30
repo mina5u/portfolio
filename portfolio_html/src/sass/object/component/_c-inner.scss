@@ -3,11 +3,5 @@
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    padding: var(--spacing-l);
-}
-
-@media screen and (max-width: 768px){
-    .c-inner{
-        padding: var(--spacing-l) var(--spacing-m);
-    }
+    padding: var(--spacing-l) var(--spacing-m);
 }

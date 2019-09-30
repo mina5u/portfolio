@@ -1,6 +1,6 @@
 .p-works{
     margin-bottom: var(--spacing-x-l);
-    background-color: #f0f0f0;
+    background-color: #f3f3f3;
 }
 
 .p-works__title{
@@ -10,6 +10,7 @@
 
 .p-works__cont{
     display: flex;
+    align-items: center;
     background-color: #fff;
     padding: var(--spacing-l);
     margin-bottom: var(--spacing-l);

@@ -39,7 +39,7 @@ const paths = {
         dest: './dist/assets/js'
     },
     images: {
-        src: './src/images/*.{jpg,jpeg,png,svg,gif}',
+        src: './src/images/*.{jpg,png,svg,gif}',
         dest: './dist/assets/images'
     }
 };
@@ -100,14 +100,14 @@ export function scripts_prod() {
 //  images
 //**************************************************
 export function images() {
-    return gulp.src(paths.images.src, { since: gulp.lastRun(images) })
+    return gulp.src(paths.images.src)
         .pipe(plumber({errorHandler: notify.onError('<%= error.message %>')}))
         .pipe(imagemin([
             pngquant({
-                quality: [.65, .8]
+                quality: [0.65, 0.8],
             }),
             mozjpeg({
-                quality: 85
+                quality: 85,
             }),
             imagemin.svgo(),
             imagemin.optipng(),
