@@ -860,7 +860,6 @@ h1 {
 .p-skill__card__description__text {
   padding: var(--spacing-x-s);
   text-align: center;
-  font-size: var(--font-size-sm);
 }
 
 .p-works {
@@ -930,13 +929,11 @@ h1 {
 
 .p-works__description__uses {
   margin-bottom: var(--spacing-s);
-  font-size: var(--font-size-sm);
 }
 
 .p-works__description__source__target {
   padding: var(--spacing-x-s);
-  font-size: var(--font-size-sm);
-  color: #09f;
+  color: var(--color-blue);
   transition: all 0.3s;
 }
 
@@ -989,6 +986,7 @@ h1 {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: var(--spacing-s);
+  max-width: 580px;
 }
 
 .p-nav-ft__list {

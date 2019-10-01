@@ -65,13 +65,11 @@
 
 .p-works__description__uses{
     margin-bottom: var(--spacing-s);
-    font-size: var(--font-size-sm);
 }
 
 .p-works__description__source__target{
     padding: var(--spacing-x-s);
-    font-size: var(--font-size-sm);
-    color: #09f;
+    color: var(--color-blue);
     transition: all 0.3s;
 }
 
