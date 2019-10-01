@@ -73,7 +73,7 @@ body {
 img {
   max-width: 100%;
   height: auto;
-  line-height: 0;
+  vertical-align: middle;
 }
 
 :root {
@@ -428,18 +428,18 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 105px;
+  padding-top: 100px;
 }
 
 @media screen and (max-width: 768px) {
   .p-header__billboard {
-    padding-top: 125px;
+    padding-top: 120px;
   }
 }
 
 @media screen and (max-width: 414px) {
   .p-header__billboard {
-    padding-top: 95px;
+    padding-top: 85px;
   }
 }
 
@@ -860,7 +860,6 @@ h1 {
 .p-skill__card__description__text {
   padding: var(--spacing-x-s);
   text-align: center;
-  font-size: var(--font-size-sm);
 }
 
 .p-works {
