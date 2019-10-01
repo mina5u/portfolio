@@ -824,7 +824,7 @@ h1 {
 }
 
 .p-skill__card {
-  padding: var(--spacing-m);
+  padding: var(--spacing-l);
   background-color: #222;
 }
 
@@ -877,7 +877,7 @@ h1 {
   flex-flow: row nowrap;
   align-items: center;
   margin-bottom: var(--spacing-m);
-  padding: var(--spacing-m);
+  padding: var(--spacing-l);
   background-color: #222;
 }
 
