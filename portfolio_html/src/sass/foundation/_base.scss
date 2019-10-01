@@ -7,7 +7,7 @@ body{
     font-feature-settings: "palt";
     font-size: 16px;
     font-weight: 400;
-    color: #000;
+    color: #fff;
 }
 
 *{
@@ -20,17 +20,13 @@ img{
     line-height: 0;
 }
 
-iframe{
-    max-width: 100%;
-    line-height: 0;
-}
-
 :root{
     --font-size-sm: 14px;
     --font-size-normal: 16px;
     --font-size-lg: 24px;
-    --font-size-x-lg: 34px;
-    --font-size-xx-lg: 60px;
+    --font-size-x-lg: 32px;
+    --font-size-xx-lg: 48px;
+    --font-size-xxx-lg: 64px;
 
     --spacing-xx-s: 4px;
     --spacing-x-s: 8px;
@@ -39,33 +35,44 @@ iframe{
     --spacing-l: 64px;
     --spacing-x-l: 128px;
     --spacing-xx-l: 256px;
+    
+    --color-black: #1a1a1a;
+    --color-white: #fff;
+    --color-gray: #222;
+    --color-lightgray: #6c6c6c;
+    --color-blue: #09f; 
 }
 
 p{
     font-size: var(--font-size-normal);
 }
 
-h3{
+h4{
     font-size: var(--font-size-lg);
 }
 
-h2{
+h3{
     font-size: var(--font-size-x-lg);
 }
 
-h1{
+h2{
     font-size: var(--font-size-xx-lg);
+}
+
+h1{
+    font-size: var(--font-size-xxx-lg);
 }
 
 
 
 @media screen and (max-width: 768px){
     :root{
-        --font-size-sm: 13px;
-        --font-size-normal: 15px;
+        --font-size-sm: 12px;
+        --font-size-normal: 14px;
         --font-size-lg: 22px;
-        --font-size-x-lg: 29px;
-        --font-size-xx-lg: 55px;
+        --font-size-x-lg: 28px;
+        --font-size-xx-lg: 44px;
+        --font-size-xxx-lg: 56px;
         
         --spacing-xx-s: 3px;
         --spacing-x-s: 6px;
@@ -81,11 +88,12 @@ h1{
 
 @media screen and (max-width: 414px){
     :root{
-        --font-size-sm: 12px;
-        --font-size-normal: 14px;
-        --font-size-lg: 19px;
+        --font-size-sm: 10px;
+        --font-size-normal: 12px;
+        --font-size-lg: 16px;
         --font-size-x-lg: 24px;
-        --font-size-xx-lg: 50px;
+        --font-size-xx-lg: 32px;
+        --font-size-xxx-lg: 48px;
         
         --spacing-xx-s: 2px;
         --spacing-x-s: 4px;

@@ -1,6 +1,5 @@
 .p-skill{
-    margin-bottom: var(--spacing-x-l);
-    background-color: #f3f3f3;
+    margin-bottom: var(--spacing-xx-l);
 }
 
 .p-skill__title{
@@ -9,35 +8,46 @@
 }
 
 .p-skill__cont{
-    grid-gap: var(--spacing-l) var(--spacing-s);
-    padding: var(--spacing-l);
-    background-color: #fff;
+    grid-gap: var(--spacing-s);
 }
 
 .p-skill__card{
-    text-align: center;
+    padding: var(--spacing-m);
+    background-color: #222;
 }
 
 .p-skill__card__icon{
-    height: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: var(--spacing-s);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #fff;
 }
 
-.p-skill__card__title{
-    margin-top: var(--spacing-x-s);
+.p-skill__card__icon__img{
+    position: absolute;
+    height: 60px;
 }
 
-.p-skill__card__prod{
+.p-skill__card__description{
     width: 100%;
-    padding: var(--spacing-s);
-    background-color: #f3f3f3;
 }
 
-.p-skill__card__prod__name,
-.p-skill__card__prod__description{
+.p-skill__card__description__name{
     padding: var(--spacing-x-s);
+    text-align: center;
+    border-bottom: 1px solid #555;
+
 }
 
-.p-skill__card__prod__name{
-    border-bottom: 1px solid #ccc;
+.p-skill__card__description__text{
+    padding: var(--spacing-x-s);
+    text-align: center;
+    font-size: var(--font-size-sm);
 }

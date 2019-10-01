@@ -8,17 +8,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 115px;
+    padding-top: 105px;
 }
 
 @media screen and (max-width: 768px){
     .p-header__billboard{
-        padding-top: 115px;
+        padding-top: 125px;
     }
 }
 
 @media screen and (max-width: 414px){
     .p-header__billboard{
-        padding-top: 85px;
+        padding-top: 95px;
     }
 }

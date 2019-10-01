@@ -1,6 +1,5 @@
 .p-profile{
-    margin-bottom: var(--spacing-x-l);
-    background-color: #f3f3f3;
+    margin-bottom: var(--spacing-xx-l);
 }
 
 .p-profile__title{
@@ -10,13 +9,14 @@
 
 .p-profile__cont{
     display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
     padding: var(--spacing-l);
-    background-color: #fff;
+    background-color: #222;
 }
 
 .p-profile__avatar{
     flex: 0 1 40%;
-    margin-left: 0;
     text-align: center;
 }
 
@@ -30,13 +30,13 @@
     margin-left: var(--spacing-m);
 }
 
-.p-profile__name{
+.p-profile__description__name{
     text-align: center;
-    margin-bottom: var(--spacing-x-s);
+    margin-bottom: var(--spacing-s);
 }
 
-.p-profile__text{
-    
+.p-profile__description__text{
+    word-break: break-word;
 }
 
 @media screen and (max-width:768px) {
