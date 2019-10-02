@@ -5,6 +5,7 @@
 .p-works__title{
     margin-bottom: var(--spacing-l);
     text-align: center;
+    font-weight: var(--font-weight-l);
 }
 
 .p-works__cont{
@@ -70,7 +71,7 @@
 .p-works__description__source__target{
     padding: var(--spacing-x-s);
     color: var(--color-blue);
-    transition: all 0.3s;
+    transition: all 0.4s;
 }
 
 .p-works__description__source__target:hover{

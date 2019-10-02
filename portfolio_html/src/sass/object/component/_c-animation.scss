@@ -13,36 +13,37 @@
     }
 }
 
-@keyframes slidein_100{
-    0% {
-        transform: translateX(100%);
+@keyframes fadeOut{
+    70% {
+        opacity: 1;
     }
-    
+
     100% {
-        transform: translateX(0);
+        opacity: 0;
+        display: none;
+        z-index: -1;
     }
 }
 
-@keyframes slidein{
+@keyframes fadeInOut{
     0% {
-        transform: translateX(-20%);
+        display: none;
         opacity: 0;
     }
     
-    100% {
-        transform: translateX(0);
+    1% {
+        display: block;
+    }
+    
+    50% {
         opacity: 1;
     }
-}
-
-@keyframes slidein-up{
-    0% {
-        transform: translateY(20%);
+    
+    99% {
         opacity: 0;
     }
     
-    100% {
-        transform: translateY(0);
-        opacity: 1;
+    100%{
+        display: none;
     }
 }

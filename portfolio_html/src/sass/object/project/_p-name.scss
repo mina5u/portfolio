@@ -1,11 +1,19 @@
+.p-name{
+    font-weight: var(--font-weight-l);
+    transition: all 0.4s;
+}
+
+.p-headerbar.is-active .p-name{
+    font-size: var(--font-size-lg);
+}
+
 .p-name__target{
-    color: #fff;
     padding: var(--spacing-x-s);
 }
 
 @media screen and (max-width: 768px){
     .p-name{
         margin-bottom: var(--spacing-x-s);
-        font-size: var(--font-size-lg);
+        font-size: var(--font-size-x-lg);
     }
 }

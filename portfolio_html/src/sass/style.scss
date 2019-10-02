@@ -6,6 +6,7 @@
 
 
 /*Layout*/
+@import "layout/l-load.scss";
 @import "layout/l-container.scss";
 @import "layout/l-header.scss";
 @import "layout/l-main.scss";
@@ -26,6 +27,7 @@
 
 
 /*Project*/
+@import "object/project/p-load.scss";
 @import "object/project/p-header.scss";
 @import "object/project/p-headerbar.scss";
 @import "object/project/p-name.scss";

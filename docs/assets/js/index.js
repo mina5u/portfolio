@@ -81,19 +81,19 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/js/mobilenav.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/js/nav.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/js/mobilenav.js":
-/*!*****************************!*\
-  !*** ./src/js/mobilenav.js ***!
-  \*****************************/
+/***/ "./src/js/nav.js":
+/*!***********************!*\
+  !*** ./src/js/nav.js ***!
+  \***********************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("const btn = document.querySelector('.js-mobilemenu-btn');\r\nconst mobilemenu = document.querySelector('.js-mobilemenu');\r\nconst mobilemenu_overlay = document.querySelector('.js-mobilemenu-overlay');\r\n\r\nbtn.addEventListener('click', function() {\r\n    btn.classList.toggle('is-active');\r\n    mobilemenu.classList.toggle('is-active');\r\n    mobilemenu_overlay.classList.toggle('is-active');\r\n}, false);\r\n        \r\nmobilemenu_overlay.addEventListener('click', function() {\r\n    btn.classList.remove('is-active');\r\n    mobilemenu.classList.remove('is-active');\r\n    mobilemenu_overlay.classList.remove('is-active');\r\n}, false);\n\n//# sourceURL=webpack:///./src/js/mobilenav.js?");
+eval("const toggleActive = (state) => {\r\n    const stateClass = 'is-active';\r\n    const headerbar = document.querySelector('.js-headerbar');\r\n    if (state) {\r\n        headerbar.classList.add(stateClass);\r\n    } else {\r\n        headerbar.classList.remove(stateClass);\r\n    }\r\n};\r\n\r\nwindow.addEventListener('scroll', () => {\r\n    const breakpoint = 1;\r\n    const pos = window.pageYOffset;\r\n\r\n    if (pos > breakpoint) {\r\n        toggleActive(true);\r\n    } else {\r\n        toggleActive(false);\r\n    }\r\n});\n\n//# sourceURL=webpack:///./src/js/nav.js?");
 
 /***/ })
 

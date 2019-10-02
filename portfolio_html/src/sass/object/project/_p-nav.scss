@@ -8,11 +8,16 @@
     flex: 0 1 calc(100% / 4);
     text-align: center;
     margin-left: var(--spacing-s);
-    font-size: var(--font-size-normal);
+    font-size: var(--font-size-lg);
+    transition: all 0.4s;
 }
 
 .p-nav__item:nth-child(1){
     margin-left: 0;
+}
+
+.p-headerbar.is-active .p-nav__item{
+    font-size: var(--font-size-normal);
 }
 
 .p-nav__target{

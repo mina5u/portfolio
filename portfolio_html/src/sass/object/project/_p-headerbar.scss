@@ -3,13 +3,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
     height: auto;
     padding: var(--spacing-m);
     background-color: var(--color-gray);
     box-shadow: 0px 3px 5px rgba(0,0,0,0.7);
+    transition: all 0.3s;
+}
+
+.p-headerbar.is-active{
+    padding: var(--spacing-s) var(--spacing-m);
 }
 
 @media screen and (max-width: 768px){
