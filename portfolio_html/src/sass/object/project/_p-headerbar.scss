@@ -13,10 +13,6 @@
     transition: all 0.3s ease;
 }
 
-.p-headerbar.is-active{
-    padding: var(--spacing-s) var(--spacing-m);
-}
-
 @media screen and (max-width: 768px){
     .p-headerbar{
         flex-flow: column nowrap;
