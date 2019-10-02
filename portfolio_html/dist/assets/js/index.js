@@ -81,19 +81,19 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/js/nav.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/js/scroll.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/js/nav.js":
-/*!***********************!*\
-  !*** ./src/js/nav.js ***!
-  \***********************/
+/***/ "./src/js/scroll.js":
+/*!**************************!*\
+  !*** ./src/js/scroll.js ***!
+  \**************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("const toggleActive = (state) => {\r\n    const stateClass = 'is-active';\r\n    const headerbar = document.querySelector('.js-headerbar');\r\n    if (state) {\r\n        headerbar.classList.add(stateClass);\r\n    } else {\r\n        headerbar.classList.remove(stateClass);\r\n    }\r\n};\r\n\r\nwindow.addEventListener('scroll', () => {\r\n    const breakpoint = 1;\r\n    const pos = window.pageYOffset;\r\n\r\n    if (pos > breakpoint) {\r\n        toggleActive(true);\r\n    } else {\r\n        toggleActive(false);\r\n    }\r\n});\n\n//# sourceURL=webpack:///./src/js/nav.js?");
+eval("const toggleActive = (state) => {\r\n    const stateClass = 'is-active';\r\n    const headerbar = document.querySelector('.js-headerbar');\r\n    if (state) {\r\n        headerbar.classList.add(stateClass);\r\n    } else {\r\n        headerbar.classList.remove(stateClass);\r\n    }\r\n};\r\n\r\nwindow.addEventListener('scroll', () => {\r\n    const breakpoint = 1;\r\n    const pos = window.pageYOffset;\r\n\r\n    if (pos > breakpoint) {\r\n        toggleActive(true);\r\n    } else {\r\n        toggleActive(false);\r\n    }\r\n});\n\n//# sourceURL=webpack:///./src/js/scroll.js?");
 
 /***/ })
 

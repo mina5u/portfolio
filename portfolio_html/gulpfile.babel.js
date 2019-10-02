@@ -31,7 +31,7 @@ const paths = {
         dest: './dist',
     },
     styles: {
-        src: './src/sass/**/*.scss',
+        src: './src/sass/**/*.sass',
         dest: './dist/assets/css'
     },
     scripts: {

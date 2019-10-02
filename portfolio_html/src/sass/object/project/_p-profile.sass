@@ -1,0 +1,45 @@
+.p-profile
+    margin-bottom: var(--spacing-xx-l)
+
+
+.p-profile__title
+    margin-bottom: var(--spacing-l)
+    text-align: center
+    font-weight: var(--font-weight-l)
+
+
+.p-profile__cont
+    display: flex
+    flex-flow: row nowrap
+    align-items: center
+    padding: var(--spacing-l)
+    background-color: #222
+    @include md
+        flex-flow: column nowrap
+
+
+.p-profile__avatar
+    flex: 0 1 40%
+    text-align: center
+    @include md
+        margin-bottom: var(--spacing-m)
+
+
+.p-profile__avatar__img
+    width: 300px
+    border-radius: 50%
+
+
+.p-profile__description
+    flex: 0 1 60%
+    margin-left: var(--spacing-m)
+
+
+.p-profile__description__name
+    margin-bottom: var(--spacing-s)
+    text-align: center
+
+
+.p-profile__description__text
+    word-break: break-word
+
