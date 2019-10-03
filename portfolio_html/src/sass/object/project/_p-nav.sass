@@ -14,15 +14,11 @@
         margin-left: 0
 
 
-.p-headerbar.is-active .p-nav__item
-    font-size: var(--font-size-normal)
-
-
 .p-nav__target
     position: relative
     display: inline-block
     padding: var(--spacing-x-s)
-    color: #fff
+    color: var(--color-white)
     &::after
         position: absolute
         display: block
@@ -34,5 +30,5 @@
         background-color: #fff
         transition: 0.4s all
         transform: translateX(-0%)
-    &t:hover::after
+    &:hover::after
         width: 100%

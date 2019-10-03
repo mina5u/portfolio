@@ -82,10 +82,10 @@ export function styles_prod() {
 //  Scripts
 //**************************************************
 export function scripts() {
-    return gulp.src(paths.scripts.src, { sourcemaps: true })
+    return gulp.src(paths.scripts.src)
         .pipe(webpackStream(webpackDev, webpack))
         .pipe(plumber({errorHandler: notify.onError('<%= error.message %>')}))
-        .pipe(gulp.dest(paths.scripts.dest, { sourcemaps: './map'}))
+        .pipe(gulp.dest(paths.scripts.dest))
         .pipe(browserSync.stream());
 }
 //  Production

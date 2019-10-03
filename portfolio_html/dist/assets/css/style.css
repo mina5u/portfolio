@@ -338,13 +338,6 @@ h1 {
   }
 }
 
-.c-inner {
-  max-width: 1280px;
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 @-webkit-keyframes fade {
   0% {
     display: none;
@@ -431,6 +424,17 @@ h1 {
   }
 }
 
+.c-inner {
+  max-width: 1280px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.c-title {
+  font-weight: var(--font-weight-l);
+}
+
 /*Component*/
 /*Project*/
 .p-load {
@@ -496,6 +500,14 @@ h1 {
   }
 }
 
+.p-headerbar.is-active .p-nav__item {
+  font-size: var(--font-size-normal);
+}
+
+.p-headerbar.is-active .p-name {
+  font-size: var(--font-size-lg);
+}
+
 .p-name {
   font-weight: var(--font-weight-l);
   transition: all 0.4s ease;
@@ -506,10 +518,6 @@ h1 {
     margin-bottom: var(--spacing-x-s);
     font-size: var(--font-size-x-lg);
   }
-}
-
-.p-headerbar.is-active .p-name {
-  font-size: var(--font-size-lg);
 }
 
 .p-name__target {
@@ -534,15 +542,11 @@ h1 {
   margin-left: 0;
 }
 
-.p-headerbar.is-active .p-nav__item {
-  font-size: var(--font-size-normal);
-}
-
 .p-nav__target {
   position: relative;
   display: inline-block;
   padding: var(--spacing-x-s);
-  color: #fff;
+  color: var(--color-white);
 }
 
 .p-nav__target::after {
@@ -558,7 +562,7 @@ h1 {
   transform: translateX(0%);
 }
 
-.p-nav__targett:hover::after {
+.p-nav__target:hover::after {
   width: 100%;
 }
 
@@ -596,7 +600,6 @@ h1 {
 .p-profile__title {
   margin-bottom: var(--spacing-l);
   text-align: center;
-  font-weight: var(--font-weight-l);
 }
 
 .p-profile__cont {
@@ -640,6 +643,7 @@ h1 {
 }
 
 .p-profile__description__text {
+  margin-bottom: var(--spacing-s);
   word-break: break-word;
 }
 
@@ -650,7 +654,6 @@ h1 {
 .p-skill__title {
   margin-bottom: var(--spacing-l);
   text-align: center;
-  font-weight: var(--font-weight-l);
 }
 
 .p-skill__cont {
@@ -703,7 +706,6 @@ h1 {
 .p-works__title {
   margin-bottom: var(--spacing-l);
   text-align: center;
-  font-weight: var(--font-weight-l);
 }
 
 .p-works__cont {
@@ -729,6 +731,15 @@ h1 {
   flex: 0 1 calc(100% / 2);
 }
 
+.p-works__images:hover .p-works__images__img {
+  opacity: 0.5;
+  transform: scale(1.1);
+}
+
+.p-works__images:hover .p-works__images__text {
+  opacity: 1;
+}
+
 @media (max-width: 1024px) {
   .p-works__images {
     margin-bottom: var(--spacing-m);
@@ -749,11 +760,6 @@ h1 {
   transition: all 0.4s ease;
 }
 
-.p-works__images:hover .p-works__images__img {
-  opacity: 0.5;
-  transform: scale(1.1);
-}
-
 .p-works__images__target {
   display: flex;
   justify-content: center;
@@ -764,10 +770,6 @@ h1 {
   position: absolute;
   opacity: 0;
   transition: all 0.4s ease;
-}
-
-.p-works__images:hover .p-works__images__text {
-  opacity: 1;
 }
 
 .p-works__description {
@@ -810,7 +812,6 @@ h1 {
 .p-contact__title {
   margin-bottom: var(--spacing-l);
   text-align: center;
-  font-weight: var(--font-weight-l);
 }
 
 .p-contact__cont {
