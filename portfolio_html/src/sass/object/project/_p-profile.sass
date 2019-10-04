@@ -12,13 +12,13 @@
     flex-flow: row nowrap
     align-items: center
     padding: var(--spacing-l)
-    background-color: #222
+    background-color: var(--color-gray)
     @include md
         flex-flow: column nowrap
 
 
 .p-profile__avatar
-    flex: 0 1 40%
+    flex: 0 1 45%
     text-align: center
     @include md
         margin-bottom: var(--spacing-m)
@@ -30,16 +30,27 @@
 
 
 .p-profile__description
-    flex: 0 1 60%
+    flex: 0 1 55%
     margin-left: var(--spacing-m)
+    @include md
+        max-width: 550px
+        margin-left: 0
 
 
-.p-profile__description__name
+.p-profile__description__name,
+.p-profile__description__age,
     margin-bottom: var(--spacing-s)
     text-align: center
 
+.p-profile__description__age
+    color: var(--color-lightgray)
+
+.p-profile__description__name
+    font-weight: var(--font-weight-l)
 
 .p-profile__description__text
     margin-bottom: var(--spacing-s)
     word-break: break-word
+    &:nth-last-child(1)
+        margin-bottom: 0;
 

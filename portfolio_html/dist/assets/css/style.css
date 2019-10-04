@@ -59,7 +59,7 @@ body {
   margin-right: auto;
   margin-left: auto;
   line-height: 1.6;
-  font-family: 'arial',"Hiragino Kaku Gothic ProN","メイリオ",'sans-serif';
+  font-family: 'Robot','arial',"Hiragino Kaku Gothic ProN","メイリオ",'sans-serif';
   font-feature-settings: "palt";
   font-size: 16px;
   font-weight: 400;
@@ -90,10 +90,10 @@ img {
   --spacing-l: 64px;
   --spacing-x-l: 128px;
   --spacing-xx-l: 256px;
-  --color-black: #1a1a1a;
   --color-white: #fff;
+  --color-black: #111;
   --color-gray: #222;
-  --color-lightgray: #6c6c6c;
+  --color-lightgray: #ccc;
   --color-blue: #09f;
   --font-weight-l: 600;
   --font-weight-x-l: 800;
@@ -500,12 +500,12 @@ h1 {
   }
 }
 
-.p-headerbar.is-active .p-nav__item {
-  font-size: var(--font-size-normal);
-}
-
 .p-headerbar.is-active .p-name {
   font-size: var(--font-size-lg);
+}
+
+.p-headerbar.is-active .p-nav__item {
+  font-size: var(--font-size-normal);
 }
 
 .p-name {
@@ -607,7 +607,7 @@ h1 {
   flex-flow: row nowrap;
   align-items: center;
   padding: var(--spacing-l);
-  background-color: #222;
+  background-color: var(--color-gray);
 }
 
 @media (max-width: 1024px) {
@@ -617,7 +617,7 @@ h1 {
 }
 
 .p-profile__avatar {
-  flex: 0 1 40%;
+  flex: 0 1 45%;
   text-align: center;
 }
 
@@ -633,18 +633,38 @@ h1 {
 }
 
 .p-profile__description {
-  flex: 0 1 60%;
+  flex: 0 1 55%;
   margin-left: var(--spacing-m);
 }
 
-.p-profile__description__name {
+@media (max-width: 1024px) {
+  .p-profile__description {
+    max-width: 550px;
+    margin-left: 0;
+  }
+}
+
+.p-profile__description__name,
+.p-profile__description__age {
   margin-bottom: var(--spacing-s);
   text-align: center;
+}
+
+.p-profile__description__age {
+  color: var(--color-lightgray);
+}
+
+.p-profile__description__name {
+  font-weight: var(--font-weight-l);
 }
 
 .p-profile__description__text {
   margin-bottom: var(--spacing-s);
   word-break: break-word;
+}
+
+.p-profile__description__text:nth-last-child(1) {
+  margin-bottom: 0;
 }
 
 .p-skill {
@@ -662,7 +682,7 @@ h1 {
 
 .p-skill__card {
   padding: var(--spacing-l);
-  background-color: #222;
+  background-color: var(--color-gray);
 }
 
 .p-skill__card__icon {
@@ -691,12 +711,12 @@ h1 {
 .p-skill__card__description__name {
   padding: var(--spacing-x-s);
   text-align: center;
-  border-bottom: 1px solid #555;
+  border-bottom: 1px solid #666;
 }
 
 .p-skill__card__description__text {
   padding: var(--spacing-x-s);
-  text-align: center;
+  color: var(--color-lightgray);
 }
 
 .p-works {
@@ -714,7 +734,7 @@ h1 {
   align-items: center;
   margin-bottom: var(--spacing-m);
   padding: var(--spacing-l);
-  background-color: #222;
+  background-color: var(--color-gray);
 }
 
 .p-works__cont:nth-last-child(1) {
@@ -797,16 +817,17 @@ h1 {
 
 .p-works__description__uses {
   margin-bottom: var(--spacing-s);
+  color: var(--color-lightgray);
 }
 
-.p-works__description__source:hover {
+.p-works__description__source__target:hover {
   opacity: 0.7;
 }
 
 .p-works__description__source__target {
   padding: var(--spacing-x-s);
   color: var(--color-blue);
-  transition: all 0.4s;
+  transition: all 0.3s;
 }
 
 .p-contact__title {
@@ -821,6 +842,7 @@ h1 {
 .p-contact__mail {
   text-align: center;
   word-break: break-all;
+  color: var(--color-lightgray);
 }
 
 .p-footer {
@@ -828,7 +850,7 @@ h1 {
 }
 
 .p-footer__copyright {
-  border-top: 1px solid var(--color-lightgray);
+  border-top: 1px solid #666;
 }
 
 .p-footer__copyright__text {

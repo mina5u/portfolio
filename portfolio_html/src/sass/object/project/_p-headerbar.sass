@@ -13,10 +13,8 @@
     transition: all 0.3s ease
     @include md
         flex-flow: column nowrap
+    &.is-active .p-name
+        font-size: var(--font-size-lg)
+    &.is-active .p-nav__item
+        font-size: var(--font-size-normal)
 
-.p-headerbar.is-active .p-nav__item
-    font-size: var(--font-size-normal)
-    
-
-.p-headerbar.is-active .p-name
-    font-size: var(--font-size-lg)
