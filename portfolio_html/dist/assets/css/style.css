@@ -90,13 +90,13 @@ img {
   --spacing-l: 64px;
   --spacing-x-l: 128px;
   --spacing-xx-l: 256px;
+  --color-base: #161616;
+  --color-main: #222;
   --color-white: #fff;
-  --color-black: #111;
-  --color-gray: #222;
-  --color-lightgray: #ccc;
+  --color-gray: #ccc;
   --color-blue: #09f;
-  --font-weight-l: 600;
-  --font-weight-x-l: 800;
+  --font-weight-lg: 600;
+  --font-weight-x-lg: 800;
 }
 
 @media (max-width: 1024px) {
@@ -175,9 +175,9 @@ h1 {
   height: 100%;
   margin-right: auto;
   margin-left: auto;
-  background-color: var(--color-black);
   -webkit-animation: fade 1s ease 0s normal 1 forwards;
           animation: fade 1s ease 0s normal 1 forwards;
+  background-color: var(--color-base);
 }
 
 .l-header {
@@ -185,6 +185,7 @@ h1 {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+  background-color: var(--color-base);
 }
 
 .l-main {
@@ -201,7 +202,7 @@ h1 {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  background-color: var(--color-gray);
+  background-color: var(--color-main);
 }
 
 /*Layout*/
@@ -432,7 +433,7 @@ h1 {
 }
 
 .c-title {
-  font-weight: var(--font-weight-l);
+  font-weight: var(--font-weight-lg);
 }
 
 /*Component*/
@@ -444,12 +445,13 @@ h1 {
   align-items: center;
   max-width: 100%;
   height: 100vh;
+  background-color: var(--color-base);
 }
 
 .p-load__text {
   position: absolute;
   opacity: 0;
-  font-weight: var(--font-weight-l);
+  font-weight: var(--font-weight-lg);
   -webkit-animation: fadeInOut 4s forwards;
           animation: fadeInOut 4s forwards;
 }
@@ -464,18 +466,18 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 118px;
+  padding-top: 115px;
 }
 
 @media (max-width: 1024px) {
   .p-header__billboard {
-    padding-top: 145px;
+    padding-top: 132px;
   }
 }
 
 @media (max-width: 414px) {
   .p-header__billboard {
-    padding-top: 107px;
+    padding-top: 100px;
   }
 }
 
@@ -489,9 +491,15 @@ h1 {
   width: 100%;
   height: auto;
   padding: var(--spacing-m);
-  background-color: var(--color-gray);
+  background-color: var(--color-main);
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.7);
   transition: all 0.3s ease;
+}
+
+@media (min-width: 1025px) {
+  .p-headerbar.is-active .p-name {
+    font-size: var(--font-size-lg);
+  }
 }
 
 @media (max-width: 1024px) {
@@ -500,16 +508,9 @@ h1 {
   }
 }
 
-.p-headerbar.is-active .p-name {
-  font-size: var(--font-size-lg);
-}
-
-.p-headerbar.is-active .p-nav__item {
-  font-size: var(--font-size-normal);
-}
-
 .p-name {
-  font-weight: var(--font-weight-l);
+  font-size: var(--font-size-x-lg);
+  font-weight: var(--font-weight-lg);
   transition: all 0.4s ease;
 }
 
@@ -534,7 +535,7 @@ h1 {
   flex: 0 1 calc(100% / 4);
   margin-left: var(--spacing-s);
   text-align: center;
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-normal);
   transition: all 0.4s ease;
 }
 
@@ -557,8 +558,8 @@ h1 {
   left: 0%;
   bottom: 0;
   content: "";
-  background-color: #fff;
-  transition: 0.4s all;
+  background-color: var(--color-white);
+  transition: all 0.4s ease;
   transform: translateX(0%);
 }
 
@@ -588,7 +589,7 @@ h1 {
 .p-logo {
   position: absolute;
   z-index: 1;
-  font-weight: var(--font-weight-l);
+  font-weight: var(--font-weight-lg);
   -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.6));
           filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.6));
 }
@@ -607,7 +608,7 @@ h1 {
   flex-flow: row nowrap;
   align-items: center;
   padding: var(--spacing-l);
-  background-color: var(--color-gray);
+  background-color: var(--color-main);
 }
 
 @media (max-width: 1024px) {
@@ -651,11 +652,11 @@ h1 {
 }
 
 .p-profile__description__age {
-  color: var(--color-lightgray);
+  color: var(--color-gray);
 }
 
 .p-profile__description__name {
-  font-weight: var(--font-weight-l);
+  font-weight: var(--font-weight-lg);
 }
 
 .p-profile__description__text {
@@ -682,7 +683,7 @@ h1 {
 
 .p-skill__card {
   padding: var(--spacing-l);
-  background-color: var(--color-gray);
+  background-color: var(--color-main);
 }
 
 .p-skill__card__icon {
@@ -696,7 +697,7 @@ h1 {
   margin-left: auto;
   margin-bottom: var(--spacing-s);
   border-radius: 50%;
-  background-color: #fff;
+  background-color: var(--color-white);
 }
 
 .p-skill__card__icon__img {
@@ -711,12 +712,12 @@ h1 {
 .p-skill__card__description__name {
   padding: var(--spacing-x-s);
   text-align: center;
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid var(--color-gray);
 }
 
 .p-skill__card__description__text {
   padding: var(--spacing-x-s);
-  color: var(--color-lightgray);
+  color: var(--color-gray);
 }
 
 .p-works {
@@ -734,7 +735,7 @@ h1 {
   align-items: center;
   margin-bottom: var(--spacing-m);
   padding: var(--spacing-l);
-  background-color: var(--color-gray);
+  background-color: var(--color-main);
 }
 
 .p-works__cont:nth-last-child(1) {
@@ -753,7 +754,7 @@ h1 {
 
 .p-works__images:hover .p-works__images__img {
   opacity: 0.5;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .p-works__images:hover .p-works__images__text {
@@ -777,7 +778,7 @@ h1 {
 .p-works__images__img {
   width: 100%;
   height: 100%;
-  transition: all 0.4s ease;
+  transition: all 0.4s ease-in-out;
 }
 
 .p-works__images__target {
@@ -789,11 +790,12 @@ h1 {
 .p-works__images__text {
   position: absolute;
   opacity: 0;
-  transition: all 0.4s ease;
+  transition: all 0.4s ease-in-out;
 }
 
 .p-works__description {
   flex: 0 1 calc(100% / 2);
+  width: 100%;
   margin-left: var(--spacing-m);
 }
 
@@ -817,17 +819,17 @@ h1 {
 
 .p-works__description__uses {
   margin-bottom: var(--spacing-s);
-  color: var(--color-lightgray);
-}
-
-.p-works__description__source__target:hover {
-  opacity: 0.7;
+  color: var(--color-gray);
 }
 
 .p-works__description__source__target {
   padding: var(--spacing-x-s);
   color: var(--color-blue);
-  transition: all 0.3s;
+  transition: all 0.2s ease;
+}
+
+.p-works__description__source__target:hover {
+  opacity: 0.7;
 }
 
 .p-contact__title {
@@ -888,7 +890,7 @@ h1 {
   position: relative;
   display: inline-block;
   padding: var(--spacing-x-s);
-  color: #fff;
+  color: var(--color-white);
 }
 
 .p-nav-ft__target::after {
@@ -899,8 +901,8 @@ h1 {
   left: 0%;
   bottom: 0;
   content: "";
-  background-color: #fff;
-  transition: 0.4s all;
+  background-color: var(--color-white);
+  transition: 0.4s all ease;
   transform: translateX(0%);
 }
 

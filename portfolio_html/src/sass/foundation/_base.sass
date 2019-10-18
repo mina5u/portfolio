@@ -20,10 +20,20 @@ img
     vertical-align: middle
     
 
+$pc: 1025px
+
+
 $tab: 1024px
+
+
 $sp: 414px
 
 
+@mixin lg
+    @media (min-width: ($pc))
+        @content
+
+        
 @mixin md
     @media (max-width: ($tab))
         @content
@@ -50,14 +60,14 @@ $sp: 414px
     --spacing-x-l: 128px
     --spacing-xx-l: 256px
     
+    --color-base: #161616
+    --color-main: #222
     --color-white: #fff
-    --color-black: #111
-    --color-gray: #222
-    --color-lightgray: #ccc
+    --color-gray: #ccc
     --color-blue: #09f
     
-    --font-weight-l: 600
-    --font-weight-x-l: 800
+    --font-weight-lg: 600
+    --font-weight-x-lg: 800
 
     @include md
             --font-size-sm: 12px
