@@ -36,5 +36,6 @@
         background-color: var(--color-white)
         transition: 0.4s all ease
         transform: translateX(-0%)
-    &:hover::after
-        width: 100%
+    @include lg
+        &:hover::after
+            width: 100%
