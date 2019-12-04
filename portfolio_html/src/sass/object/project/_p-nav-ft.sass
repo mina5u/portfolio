@@ -24,7 +24,6 @@
     position: relative
     display: inline-block
     padding: var(--spacing-x-s)
-    color: var(--color-white)
     &::after
         position: absolute
         display: block
@@ -33,8 +32,9 @@
         left : 0%
         bottom: 0
         content: ""
-        background-color: var(--color-white)
+        background-color: var(--font-color-white)
         transition: 0.4s all ease
         transform: translateX(-0%)
-    &:hover::after
-        width: 100%
+    @include lg
+        &:hover::after
+            width: 100%
