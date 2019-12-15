@@ -590,6 +590,10 @@ h1 {
   }
 }
 
+.p-billboard {
+  width: 100%;
+}
+
 .p-billboard__img {
   width: 100%;
   height: calc(100vh - 115px);
