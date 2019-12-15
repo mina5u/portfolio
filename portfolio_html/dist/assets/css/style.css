@@ -177,8 +177,8 @@ h1 {
   margin-right: auto;
   margin-left: auto;
   background-color: var(--color-black);
-  -webkit-animation: fadeOut 5s forwards;
-          animation: fadeOut 5s forwards;
+  -webkit-animation: fadeOut 5s ease 0s normal 1 forwards;
+          animation: fadeOut 5s ease 0s normal 1 forwards;
 }
 
 .l-container {
@@ -186,8 +186,8 @@ h1 {
   height: 100%;
   margin-right: auto;
   margin-left: auto;
-  -webkit-animation: fade 1s ease 0s normal 1 forwards;
-          animation: fade 1s ease 0s normal 1 forwards;
+  -webkit-animation: fade 5s ease 0s normal 1 forwards;
+          animation: fade 5s ease 0s normal 1 forwards;
   background-color: var(--color-base);
 }
 
@@ -472,8 +472,8 @@ h1 {
   position: absolute;
   opacity: 0;
   font-weight: var(--font-weight-lg);
-  -webkit-animation: fadeInOut 4s forwards;
-          animation: fadeInOut 4s forwards;
+  -webkit-animation: fadeInOut 4s ease 0s normal 1 forwards;
+          animation: fadeInOut 4s ease 0s normal 1 forwards;
 }
 
 .p-header__headerbar {
